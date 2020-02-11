@@ -26,7 +26,7 @@ header {
 .claim-intro {
   line-height: 1.7;
   width: 90%;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
 }
 
 .left-grid,
@@ -63,17 +63,23 @@ header {
 
 .form-field {
   display: flex;
+  margin: 0.5rem;
 }
 
 .form-field > input {
-  padding: 1rem 1rem;
   border: 1px solid #ccc;
   border-radius: 0.3rem;
-  margin: 0.5rem;
-  font-size: 1rem;
   flex: 1;
+  font-size: 1rem;
+  padding: 1rem 1rem;
 }
 
+.claim-form input::placeholder {
+  color: hsl(246, 25%, 77%);
+  font-weight: 600;
+}
+
+/* Form active states */
 .form-field > input:hover {
   border: 2px solid #ccc;
 }
@@ -85,11 +91,7 @@ header {
   color: hsl(249, 10%, 26%);
 }
 
-.claim-form input::placeholder {
-  color: hsl(246, 25%, 77%);
-  font-weight: 600;
-}
-
+/* Button styles */
 .claim-form button {
   background-color: hsl(154, 59%, 51%);
   padding: 1rem 1rem;
@@ -97,7 +99,7 @@ header {
   border: none;
   box-shadow: 0 3px 0 0 hsla(154, 86%, 27%, 0.7);
   margin: 0.5rem;
-  font-size: 1rem;
+  font-size: em;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
@@ -107,6 +109,15 @@ header {
 .claim-form button:hover {
   cursor: pointer;
   background-color: hsl(154, 82%, 59%);
+}
+
+/* Error styling */
+
+.form-field > span {
+  background: url('images/icon-error.svg') no-repeat;
+  background-position: right;
+  width: 2rem;
+  display: none;
 }
 
 .error-message {
@@ -120,8 +131,6 @@ header {
 .claim-form .error-message {
   display: none;
 }
-
-/* Error styling */
 
 .copyright {
   font-size: 0.6rem;
