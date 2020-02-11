@@ -1,22 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("images/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
 }
 
-.all-content {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+.all-content-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  margin: 1rem;
 }
 
-h1 {
-    font-weight: 600;
+header {
+  font-weight: 600;
+  margin-top: 3rem;
+  width: 90%;
 }
 
-.claim-form{
-    display: flex;
-    flex-flow: column wrap;
+.claim-intro {
+  line-height: 1.7;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.left-grid,
+.claim-info {
+  color: #fff;
+}
+
+.claim-info {
+    padding: 1rem;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.claim-form {
+  display: flex;
+  flex-flow: column wrap;
 }
