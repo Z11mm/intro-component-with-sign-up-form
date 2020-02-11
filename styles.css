@@ -42,23 +42,41 @@ header {
   box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
+.claim-info-highlight {
+  font-weight: 600;
+}
+
+/* Form styles */
+
 .form-wrapper {
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 1.5rem;
+  box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
 .claim-form {
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
 }
 
-.claim-form input {
+.form-field {
+  display: flex;
+}
+
+.form-field > input {
   padding: 1rem 1rem;
   border: 1px solid #ccc;
   border-radius: 0.3rem;
   margin: 0.5rem;
   font-size: 1rem;
+  flex: 1;
+}
+
+.claim-form input::placeholder {
+  color: hsl(246, 25%, 77%);
+  font-weight: 600;
 }
 
 .claim-form button {
@@ -75,11 +93,30 @@ header {
   letter-spacing: 0.1em;
 }
 
+.error-message {
+  color: hsl(0, 100%, 74%);
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.7rem;
+  margin: 0 0.6rem;
+}
+
+.claim-form .error-message {
+  display: none;
+}
+
+/* Error styling */
+
 .copyright {
-    font-size: 0.6rem;
-    color: #ccc;
+  font-size: 0.6rem;
+  color: #ccc;
+}
+
+.copyright-highlight {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
 }
 
 footer {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }

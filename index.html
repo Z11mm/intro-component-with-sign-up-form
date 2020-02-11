@@ -34,18 +34,30 @@
       
       <div class="right-grid">
         <div class="claim-info">
-          <p>Try it free 7 days then $20/mo. thereafter</p>
+          <p><span class="claim-info-highlight">Try it free 7 days</span> then $20/mo. thereafter</p>
         </div>
         
         <div class="form-wrapper">
           <form class="claim-form">
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
-            <input type="email" placeholder="Email Address">
-            <input type="password" placeholder="Password">
+            <div class="form-field">
+              <input type="text" placeholder="First Name" required>
+              <div class="error-message">First Name cannot be empty</div>
+            </div>
+            <div class="form-field">
+              <input type="text" placeholder="Last Name" required>
+              <div class="error-message">Last Name cannot be empty</div>
+            </div>
+            <div class="form-field">
+              <input type="email" placeholder="Email Address" required>
+              <div class="error-message">Looks like this is not an email</div>
+            </div>
+            <div class="form-field">
+              <input type="password" placeholder="Password" required>
+              <div class="error-message">Password cannot be empty</div>
+            </div>
             <button type="submit">Claim your free trial</button>
           </form>     
-          <small class="copyright">By clicking the button, you are agreeing to our Terms and Services</small>
+          <small class="copyright">By clicking the button, you are agreeing to our <span class="copyright-highlight">Terms and Services</span></small>
         </div>
       </div>
       
@@ -53,7 +65,7 @@
       <footer>
         <p class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="#">Your Name Here</a>.
+          Coded by <a href="#">Zimuzo</a>.
         </p>
       </footer>
     </div class="all-content">
