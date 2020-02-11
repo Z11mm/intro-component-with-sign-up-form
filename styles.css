@@ -74,6 +74,17 @@ header {
   flex: 1;
 }
 
+.form-field > input:hover {
+  border: 2px solid #ccc;
+}
+
+.form-field > input:focus {
+  outline: none;
+  border: 1px solid hsl(249, 10%, 26%);
+  font-weight: 600;
+  color: hsl(249, 10%, 26%);
+}
+
 .claim-form input::placeholder {
   color: hsl(246, 25%, 77%);
   font-weight: 600;
@@ -91,6 +102,11 @@ header {
   font-weight: 600;
   color: #fff;
   letter-spacing: 0.1em;
+}
+
+.claim-form button:hover {
+  cursor: pointer;
+  background-color: hsl(154, 82%, 59%);
 }
 
 .error-message {
