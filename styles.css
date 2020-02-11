@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 3rem;
   width: 90%;
 }
@@ -35,14 +35,51 @@ header {
 }
 
 .claim-info {
-    padding: 1rem;
-    background-color: hsl(248, 32%, 49%);
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-wrapper {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
 }
 
 .claim-form {
   display: flex;
   flex-flow: column wrap;
+}
+
+.claim-form input {
+  padding: 1rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.claim-form button {
+  background-color: hsl(154, 59%, 51%);
+  padding: 1rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  box-shadow: 0 3px 0 0 hsla(154, 86%, 27%, 0.7);
+  margin: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+.copyright {
+    font-size: 0.6rem;
+    color: #ccc;
+}
+
+footer {
+    margin-top: 2rem;
 }
