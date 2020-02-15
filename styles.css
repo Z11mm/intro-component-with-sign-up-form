@@ -143,11 +143,11 @@ h1, .claim-intro, .claim-info {
 /* Error styling */
 
 .form-field.success > input {
-  border-color: hsl(154, 59%, 51%);
+  border: 2px solid hsl(154, 59%, 51%);
 }
 
 .form-field.error > input {
-  border-color: hsl(0, 100%, 74%);
+  border: 2px solid hsl(0, 100%, 74%);
 }
 
 .form-field.error > span {

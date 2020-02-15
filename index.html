@@ -38,24 +38,24 @@
         </div>
         
         <div class="form-wrapper">
-          <form class="claim-form">
-            <div class="form-field success">
-              <input type="text" placeholder="First Name" required>
+          <form class="claim-form" id="form">
+            <div class="form-field">
+              <input id="firstname" type="text" placeholder="First Name">
               <span><img src="images/icon-error.svg" alt="Error Icon"></span>
-              <small class="error-message">First Name cannot be empty</small>
-            </div>
-            <div class="form-field error">
-              <input type="text" placeholder="Last Name" required>
-              <span><img src="images/icon-error.svg" alt="Error Icon"></span>
-              <small class="error-message">Last Name cannot be empty</small>
+              <small class="error-message">First Name cannot be blank</small>
             </div>
             <div class="form-field">
-              <input type="email" placeholder="Email Address" required>
+              <input id="lastname" type="text" placeholder="Last Name">
+              <span><img src="images/icon-error.svg" alt="Error Icon"></span>
+              <small class="error-message">Last Name cannot be blank</small>
+            </div>
+            <div class="form-field">
+              <input id="email" type="email" placeholder="Email Address">
               <span><img src="images/icon-error.svg" alt="Error Icon"></span>
               <small class="error-message">Looks like this is not an email</small>
             </div>
             <div class="form-field">
-              <input type="password" placeholder="Password" required>
+              <input id="password" type="password" placeholder="Password">
               <span><img src="images/icon-error.svg" alt="Error Icon"></span>
               <small class="error-message">Password cannot be empty</small>
             </div>
@@ -74,5 +74,6 @@
       </footer>
     </div class="all-content">
   </main>
+  <script src="formValidation.js"></script>
 </body>
 </html>
