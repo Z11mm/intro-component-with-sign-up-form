@@ -70,7 +70,6 @@ h1, .claim-intro, .claim-info {
 }
 
 .form-field {
-  /* display: flex; */
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding-bottom: 1.3rem; /* space for the error message */
@@ -82,7 +81,6 @@ h1, .claim-intro, .claim-info {
   border-radius: 0.3rem;
   display: block;
   width: 100%;
-  /* flex: 1; */
   font-size: 1rem;
   padding: 1rem 1rem;
   font-family: inherit;
@@ -143,6 +141,23 @@ h1, .claim-intro, .claim-info {
 }
 
 /* Error styling */
+
+.form-field.success > input {
+  border-color: hsl(154, 59%, 51%);
+}
+
+.form-field.error > input {
+  border-color: hsl(0, 100%, 74%);
+}
+
+.form-field.error > span {
+  visibility: visible;
+}
+
+.form-field.error > small {
+  visibility: visible;
+}
+
 
 /* .form-field > span {
   background: url("images/icon-error.svg") no-repeat;
