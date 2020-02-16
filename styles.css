@@ -158,26 +158,6 @@ h1, .claim-intro, .claim-info {
   visibility: visible;
 }
 
-
-/* .form-field > span {
-  background: url("images/icon-error.svg") no-repeat;
-  background-position: right;
-  width: 2rem; 
-  display: none;
-} */
-
-/* .error-message {
-  color: hsl(0, 100%, 74%);
-  display: flex;
-  justify-content: flex-end;
-  font-size: 0.7rem;
-  margin: 0 0.6rem;
-} */
-
-/* .claim-form .error-message {
-  display: none;
-} */
-
 .copyright {
   font-size: 0.6rem;
   color: #ccc;
@@ -190,4 +170,13 @@ h1, .claim-intro, .claim-info {
 
 footer {
   margin-top: 2rem;
+}
+
+/* Desktop design */
+@media only screen and (min-width: 700px) {
+  .all-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-items: center; */
+  }
 }

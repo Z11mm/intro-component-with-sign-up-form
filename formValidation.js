@@ -1,13 +1,11 @@
-const form = document.querySelector("#form");
-
 const setError = (input, message) => {
   const formField = input.parentElement;
   const errorTextContainer = document.querySelector("small");
 
-  // add error message inside small tag
-  errorTextContainer.textContent = message;
   // add error class
   formField.classList.add("error");
+  // add error message inside small tag
+  errorTextContainer.textContent = message;
 };
 
 const setSuccess = input => {
@@ -42,14 +40,14 @@ const validateInputs = () => {
     setSuccess(firstname);
   }
 
-  if (lastnameValue === '') {
-    setError(lastname, 'Last Name cannot be blank');
+  if (lastnameValue === "") {
+    setError(lastname, "Last Name cannot be blank");
   } else {
     setSuccess(lastname);
   }
 
   if (emailValue === "") {
-    setError(email, "Looks like this is not an email");
+    setError(email, "Email cannot be blank");
   } else if (!isValidEmail(emailValue)) {
     setError(email, "Email is not valid");
   } else {
@@ -63,7 +61,7 @@ const validateInputs = () => {
   }
 };
 
-form.addEventListener("submit", e => {
+document.querySelector("#form").addEventListener("submit", e => {
   e.preventDefault();
 
   validateInputs();
