@@ -43,7 +43,7 @@ h1, .claim-intro, .claim-info {
 }
 
 .claim-info {
-  padding: 1rem;
+  padding: 0.5rem 2rem;
   background-color: hsl(248, 32%, 49%);
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
@@ -177,6 +177,28 @@ footer {
   .all-content-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* justify-items: center; */
+  }
+
+  .left-grid {
+    margin-top: 10rem;
+  }
+
+  .left-grid-content {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .claim-intro p {
+    text-align: left;
+  }
+
+  .right-grid {
+    width: 80%;
+    padding-top: 4rem;
   }
 }
