@@ -15,7 +15,7 @@ body {
   justify-content: center;
 }
 
-.all-content-wrapper { 
+.all-content-wrapper {
   /* text-align: center; */
   margin: 1rem;
   max-width: 100%;
@@ -26,7 +26,9 @@ header {
   margin-top: 3rem;
 }
 
-h1, .claim-intro, .claim-info {
+h1,
+.claim-intro,
+.claim-info {
   margin: 0 auto;
   text-align: center;
 }
@@ -184,21 +186,28 @@ footer {
   }
 
   .left-grid-content {
-    width: 70%;
     margin: 0 auto;
+    width: 70%;
   }
 
   h1 {
     font-size: 3rem;
     line-height: 1.2;
+    text-align: left;
   }
 
-  .claim-intro p {
+  .claim-intro {
+    margin: 0;
     text-align: left;
   }
 
   .right-grid {
     width: 80%;
     padding-top: 4rem;
+  }
+
+  footer {
+    grid-column: 1 / span 3;
+    margin-top: 1.5rem;
   }
 }
