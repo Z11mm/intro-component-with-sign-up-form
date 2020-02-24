@@ -61,6 +61,7 @@ h1,
 .form-wrapper {
   background-color: #fff;
   border-radius: 0.5rem;
+  border: none;
   padding: 1rem;
   box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.2);
 }
